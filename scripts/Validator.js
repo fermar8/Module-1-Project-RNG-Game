@@ -11,12 +11,12 @@ class Validator {
             invalidEmailError: this.invalidEmailError,
             passwordError: this.passwordError,
             repeatPasswordError: this.repeatPasswordError
-        }
+        };
     }
 
     validateValidEmail = (email) => {
 
-        if(this.emailSyntaxIsvalid(email)) {
+        if(this.emailSyntaxIsValid(email)) {
 
             delete this.errors.invalidEmailError;
 
@@ -24,10 +24,9 @@ class Validator {
 
             this.errors.invalidEmailError = this.invalidEmailError;
         }
-
     };
 
-    emailSyntaxValid = (email) => {
+    emailSyntaxIsValid = (email) => {
 
         const emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
 

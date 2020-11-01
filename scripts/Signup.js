@@ -53,7 +53,7 @@ class Signup {
 
         const errorsObj = validator.getErrors();
 
-        const errorStringArr = Object.values (errorsObj);
+        const errorStringsArr = Object.values (errorsObj);
 
         errorStringsArr.forEach( (str) =>{
             const p = document.createElement('p');
