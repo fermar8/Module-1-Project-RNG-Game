@@ -249,22 +249,62 @@ a:active {
     display:flex;
     align-content: center;
     flex-direction: column;
+   
     
 
 }
 
 .text-box-index {
     display:flex;
+    flex-direction:column;
     background-color: var(--blue-color);
-    padding: 40px ;
-    border-top:  100px solid var(--white-color);
-    border-right: 30px solid var(--white-color);
-    border-left: 30px solid var(--white-color);
-    border-bottom: 75px solid var(--white-color);
+    padding: 40px;
+    border-top:  100px solid lightcyan;
+    border-right: 30px solid lightcyan;
+    border-left: 30px solid lightcyan;
+    border-bottom: 70px solid lightcyan;
+    color: var(--white-color);
     
 }
-   
+
+.text-box-index > div {
+    padding: 10px;
+    display: flex;
+
     
+}
+
+
+.random-game-btn-block {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    background-color: lightcyan;
+}
+
+
+.random-game-btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    border: 3px solid var(--grey-color);
+    
+
+}
+
+
+.images-box {
+    background-color: #B8B8D1;
+    padding: 65px;
+}
+    
+.bottom-box {
+    background-color: var(--blue-color);
+    padding: 36px;
+}
+
     
 }
 
