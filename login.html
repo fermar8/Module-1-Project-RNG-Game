@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
     <title>RNG Game</title>
     
     <link rel="stylesheet" href="css/main.css"/>
@@ -22,24 +24,29 @@
              </ul>
             </div>
            </nav> 
-      <section>
-          <div>
-          <h2>Login</h2>
+           <section>
+            <div class = "header-background">
+           <div class = "header-title">
+            <h2>Login</h2>
+           </div>
+            <p class = "header-subtitle">Welcome back to RNG Game. Please Sign up!</p>
           </div>
-      </section>
-    </header>
-    <main>
+        </section>
+      </header>
+      <main>
+          <div class="login-separation"></div>
         <section class="signup">
             <div class="form-wrapper">
               <form class="login-form" action="">
                 <input type="email" id="email" placeholder="Email" />
                 <input type="password" id="password" placeholder="Password" />
-            
 
-
-                <button type="submit" class="button" id="login-button">Login</button>
+                <button class="submit-btn" type="submit" class="button" id="login-button">Login</button>
                 </form>
             </div> 
+        </section>
+        <div class= "signup-image-box"> </div>
+         <div class= "bottom-box"></div>
     </main>
     <script src="scripts/Login.js"></script>
     <script src="scripts/Database.js"></script>
