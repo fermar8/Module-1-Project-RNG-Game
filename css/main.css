@@ -127,22 +127,89 @@ table {
 
 /* --- CSS RESET END --- */
 
+:root {
+
+--grey-color: #B8B8D1;
+--blue-color: #5B5F97;
+--yellow-color: #FFC145;
+--white-color: #FFFFFB;
+--pink-color: #FF6B6C;
+
+    
+}
 
 /* Mobile phones */
 
-@media only screen and (min-width: 600px) {
+/* Body */
 
-.title {
-    position: absolute;
-    left: 5%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    
+}
+
+
+
+
+/* Navigation Bar */
+
+.nav-container {
+    
+    
+    padding: 20px;
     display: flex;
-   
+    background-color: var(--blue-color);
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: var(--white-color);
 }
 
 .nav-menu {
-    position: absolute;
-    left: 80%;
     display: flex;
+    
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    outline: none;
+    padding: 2px 1px 0;
+    text-decoration: none;
+    
+}
+
+a:link {
+    color: var(--white-color);
+}
+
+a:visited {
+    color: var(--white-color)
+
+}
+
+a:focus {
+    font-size:1.2rem ;
+
+
+}
+
+
+a:hover {
+    font-size:1.2rem;
+
+
+}
+
+
+a:active {
+    color: var(--yellow-color);
+
+
+}
+
 
 
     
@@ -152,7 +219,6 @@ table {
 
 
 
-}
 
 
 
