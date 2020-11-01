@@ -65,7 +65,8 @@ class Signup {
 
 
     saveData = (event) => {
-        event.preventDefault();
+        
+    event.preventDefault();
 
         const name = this.nameInput.value;
         const email = this.emailInput.value;
@@ -84,6 +85,7 @@ class Signup {
         this.emailInput.addEventListener("input", this.handleEmailInput);
         this.passwordInput.addEventListener("input", this.handlePasswordInput);
         this.repeatPasswordInput.addEventListener("input", this.handleRepeatPasswordInput);
+        this.buttonInput.addEventListener('click', this.saveData);
     }
 
 }
