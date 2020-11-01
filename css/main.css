@@ -306,9 +306,57 @@ a:active {
     padding: 36px;
 }
 
+ 
+/* Sign Up*/
+
+
+.signup {
+
+    margin-top: 2px;
     
 }
+.form-wrapper {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-color);
+}
 
+.form-wrapper > form {
+    display: flex;
+    flex-direction: column;
+    
+   
+  }
+
+  input {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 10px solid var(--yellow-color);
+    border-radius: 10px;
+    
+  }
+
+.signup-wrapper {   /*Needs Fixing */
+
+    display: flex;
+    align-content: center;
+}
+.signup-btn {
+
+
+    width: 100px
+  }
+
+
+  .signup-image-box { /*Placeholder for image*/
+      padding: 153px;
+      background-color: var(--grey-color);
+  }
+
+ 
 
 
 
