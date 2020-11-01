@@ -130,11 +130,10 @@ table {
 :root {
 
 --grey-color: #B8B8D1;
---blue-color: #5B5F97;
+--blue-color: #0A122A;
 --yellow-color: #FFC145;
---white-color: #FFFFFB;
+--white-color: #FBFAF8;
 --pink-color: #FF6B6C;
---darkblue-color: #000080;
 
     
 }
@@ -255,16 +254,21 @@ a:active {
 
 }
 
+
+.background {
+
+    padding:50px;
+    background-color: var(--white-color)
+
+}
+
 .text-box-index {
     display:flex;
     flex-direction:column;
     align-content: center;
     background-color: var(--blue-color);
     padding: 40px;
-    border-top:  100px solid lightcyan;
-    border-right: 30px solid lightcyan;
-    border-left: 30px solid lightcyan;
-    border-bottom: 70px solid lightcyan;
+    border-radius: 15px;
     color: var(--white-color);
     
 }
@@ -281,12 +285,12 @@ a:active {
     display:flex;
     justify-content: center;
     padding-bottom: 40px;
-    background-color: lightcyan;
+    background-color: var(--white-color);
 }
 
 
 .random-game-btn {
-    background-color: var(--blue-color);
+    background-color: #74EB34;
     color: var(--white-color);
     padding: 10px;
     border-radius: 10px;
