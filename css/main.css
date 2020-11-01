@@ -363,7 +363,11 @@ a:active {
  }
 
 
+/*Dashboard*/
 
+.container {
+    padding: 242px;
+}
 
 
 
