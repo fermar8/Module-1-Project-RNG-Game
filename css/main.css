@@ -257,6 +257,7 @@ a:active {
 .text-box-index {
     display:flex;
     flex-direction:column;
+    align-content: center;
     background-color: var(--blue-color);
     padding: 40px;
     border-top:  100px solid lightcyan;
@@ -270,7 +271,7 @@ a:active {
 .text-box-index > div {
     padding: 10px;
     display: flex;
-
+    align-content: center;
     
 }
 
