@@ -1,7 +1,5 @@
 "use strict"
 
-
-
 fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
     "method": "GET",
     "headers": {
@@ -14,6 +12,8 @@ fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
     const pr = response.json();
     return pr;
 })
+
+
 .then( (data) => {
     const allData = data.results;
     allData.forEach(games => {
@@ -24,55 +24,14 @@ fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
     createDiv.innerHTML= `
     <img src="${games.background_image}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title">${games.name}</h5>
+      <p class="card-text">${games.rating}/5</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-
   `
+  console.log(data)
   gameList.appendChild(createDiv);
 })
-console.log(allData);
-console.log(data)
-console.log('name', data.results[0].name);
-console.log('name', data.results[0].background_image);
-
-// const apiImages = data.results.map (results =>
-// results.background_image)
-
-//  console.log(apiImages)
-
-// const apiNames = data.results.map (results =>
-// results.name);
-
-// console.log(apiNames)
-
-// const displayedImages = document.createElement('img');
-// displayedImages.setAttribute('src', apiImages);
-// displayedImages.style.width = "200px";
-
-// gameList.appendChild(displayedImages)
-
 
 })
-.catch((err)=>{})
 
-
-
-
-
-/*data.results.forEach( (results) =>{
-    const newImg = document.createElement('img');
-    newImg.setAttribute('src', results.background_image);
-    newImg.style.width = "200px"
-
-    gameList.appendChild(newImg);
-
-    const newName = document.createElement('p');
-    newName.setAttribute('name', results.name);
-    
-    gameList.appendChild(newName);
-
-}) 
-
-*/
