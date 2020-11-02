@@ -20,8 +20,8 @@ console.log('data', data);
 
 const article = document.createElement('article');
 article.innerHTML =`
-<img src="${data.results.background_image}" />
-      <h3>${data.results.name}</h3>
+<img src="${data.results[0].background_image}" />
+      <h3>${data.results[0].name}</h3>
 `
 
 gameList.appendChild(article);
