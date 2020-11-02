@@ -129,11 +129,10 @@ table {
 
 :root {
 
---grey-color: #B8B8D1;
---blue-color: #0A122A;
---yellow-color: #FFC145;
---white-color: #FBFAF8;
---pink-color: #FF6B6C;
+--grey-color: #808080;
+--text-color: #232529;
+--orange-color: #fad790;
+--white-color: #F8F8FF;
 
     
 }
@@ -146,221 +145,113 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: normal;
-    font-size: 1rem;
-    border-right: 4px solid black;
-    border-left: 4px solid black; 
+    background-color: var(--white-color);
     
 }
 
 
 @media only screen and (max-width: 768px) {
     
-    
-
-
-
-/* Navigation Bar */
-
 nav {
-    width: 100%vw;
+    position:relative;
+    background-color: var(--grey-color);
+    color: var(--text-color);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
 }
 
 .nav-container {
-    
-    
-    padding: 20px;
-    display: flex;
-    background-color: var(--blue-color);
-    flex-direction: row;
-    align-items: flex-end;
+    position: relative;
+    color: var(--text-color);
+    width: 100%;
+    display:flex;
     justify-content: space-between;
-    color: var(--white-color);
+    align-items: center;
+}
+
+h1 {
+    padding-left: 7px;
+    
+}
+
+.title-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 7vw;
     
 }
 
 .nav-menu {
-    display: flex;
-    
+    display:flex;
+    padding-right: 7px;
 }
-
-.title {
-    font-size: 1.3rem;
-}
-
 
 li {
-    padding: 5px;
+    padding-left: 10px;
+    
 }
 
-a {
-    outline: none;
-    padding: 2px 1px 0;
+
+li a {
     text-decoration: none;
-    color: var(--white-color)
-    
-}
-
-a:link {
-    color: var(--white-color);
+    font-size: 3.5vw;
+    color: var(--text-color);
 }
 
 
-.header-background {
-
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #FFC145;
-    border-bottom: 10px solid var(--grey-color);
+.header-title{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding-bottom: 10vw;
     
-   
-
 }
 
-.header-title {
-    color: var(--darkblue-color);
-    font-size: 1.3rem;
-    padding: 10px;
-    
-    
+h2 {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 5.5vw;
 }
 
 .header-subtitle {
-    font-size: 1.03rem;
+    width: 50%;
+    margin: 0 auto;
     
 }
 
 
 .main {
-    display:flex;
-    align-content: center;
-    flex-direction: column;
-   
-    
+    width: 70%;
+    margin: 0 auto;    
 
-}
-
-
-.background {
-
-    padding:60px;
     
     
-
-
-
 }
 
 .text-box-index {
-    display:flex;
-    flex-direction:column;
-    align-content: center;
-    background-color: var(--blue-color);
-    padding: 40px;
-    border-radius: 15px;
-    color: var(--white-color);
-    
-}
+    background-color: var(--grey-color);
+    padding: 10vw;
+    border-radius: 2vw;
 
-.text-box-index > div {
-    padding: 10px;
-    display: flex;
-    align-content: center;
-    
 }
 
 
 .random-game-btn-block {
-    display:flex;
-    justify-content: center;
-    padding-bottom: 40px;
-    background-color: var(--white-color);
-}
+    margin-top: 10%;
 
+}
 
 .random-game-btn {
-    background-color: var(--yellow-color);
-    color: var(--blue-color);
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 1.05rem;
-    border: 3px solid var(--blue-color);
-    
 
+    background-color: var(--grey-color);
+    padding: 1vw;
+    border-radius: 1vw;
 }
 
 
-.images-box {
-    background-color: #B8B8D1;
-    padding: 65px;
-}
-
-
-    
-.bottom-box {
-    background-color: var(--blue-color);
-    padding: 36px;
-}
-
- 
-/* Sign Up and Login*/
-
-
-.signup {
-
-    margin-top: 2px;
-    
-}
-.form-wrapper {
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--blue-color);
-}
-
-.form-wrapper > form {
-    display: flex;
-    flex-direction: column;
-    
-   
-  }
-
-  input {
-    padding: 10px;
-    font-size: 1.1rem;
-    border: 10px solid var(--yellow-color);
-    border-radius: 10px;
-    
-  }
-
-.signup-wrapper {   /*Needs Fixing */
-
-    display: flex;
-    align-content: center;
-}
-.submit-btn {
-
-
-    width: 100px
-  }
-
-
-  .signup-image-box { /*Placeholder for image*/
-      padding: 153px;
-      background-color: var(--grey-color);
-  }
-
- .login-separation {
-     padding: 70px;
-     background-color: var(--blue-color);
- }
-
- .message-container {
-     color: var(--white-color)
- }
 
 
 /*Dashboard*/
@@ -368,7 +259,7 @@ a:link {
 
 
 .games-list img{
-    max-width: 418px;
+    width: 100%;
 }
 
 .games-list h5 {
