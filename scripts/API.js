@@ -1,6 +1,5 @@
 "use strict"
 
-const gameList = document.querySelector('.games-list');
 
 
 fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
@@ -16,29 +15,47 @@ fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
     return pr;
 })
 .then( (data) => {
+    const allData = data.results;
+    allData.forEach(games => {
+        const gameList = document.querySelector('.games-list');
+    const createDiv = document.createElement('div')
+    createDiv.setAttribute('class','card' )
+    createDiv.style.width='18rem';
+    createDiv.innerHTML= `
+    <img src="${games.background_image}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
 
+  `
+  gameList.appendChild(createDiv);
+})
+console.log(allData);
 console.log(data)
 console.log('name', data.results[0].name);
 console.log('name', data.results[0].background_image);
 
-const apiImages = data.results.map (results =>
-results.background_image)
-    
- console.log(apiImages)
+// const apiImages = data.results.map (results =>
+// results.background_image)
 
-const apiNames = data.results.map (results =>
-results.name);
+//  console.log(apiImages)
 
-console.log(apiNames)
+// const apiNames = data.results.map (results =>
+// results.name);
 
-const displayedImages = document.createElement('img');
-displayedImages.setAttribute('src', apiImages);
-displayedImages.style.width = "200px";
+// console.log(apiNames)
 
-gameList.appendChild(displayedImages)
+// const displayedImages = document.createElement('img');
+// displayedImages.setAttribute('src', apiImages);
+// displayedImages.style.width = "200px";
+
+// gameList.appendChild(displayedImages)
 
 
 })
+.catch((err)=>{})
 
 
 
