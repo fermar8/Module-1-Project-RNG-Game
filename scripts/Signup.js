@@ -79,6 +79,8 @@ class Signup {
         this.nameInput.value = "";
         this.emailInput.value = "";
         this.passwordInput.value = "";
+
+        
     };
 
     addListeners = () => {
