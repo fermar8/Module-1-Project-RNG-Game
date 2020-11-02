@@ -187,36 +187,12 @@ a {
     outline: none;
     padding: 2px 1px 0;
     text-decoration: none;
+    color: var(--white-color)
     
 }
 
 a:link {
     color: var(--white-color);
-}
-
-a:visited {
-    color: var(--white-color)
-
-}
-
-a:focus {
-    font-size:1.2rem ;
-
-
-}
-
-
-a:hover {
-    font-size:1.2rem;
-
-
-}
-
-
-a:active {
-    color: var(--yellow-color);
-
-
 }
 
 

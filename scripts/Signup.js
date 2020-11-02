@@ -83,6 +83,7 @@ class Signup {
         
     };
 
+
     addListeners = () => {
         this.emailInput.addEventListener("input", this.handleEmailInput);
         this.passwordInput.addEventListener("input", this.handlePasswordInput);
