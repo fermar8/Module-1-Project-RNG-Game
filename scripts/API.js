@@ -39,9 +39,16 @@ function getGames () {
 }
 getGames()
 
-function getInfo () {
 
-    fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
+/*function getRandomGame () {
+
+    const newLocal = Math.round(Math.floor((Math.random() * 10)));
+    let randomGamePage = newLocal;
+
+    console.log(randomGamePage)
+
+
+    fetch(`"https://rawg-video-games-database.p.rapidapi.com/games?page=${randomGamePage}"`, {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
@@ -61,7 +68,7 @@ function getInfo () {
         createDiv.setAttribute('class','card' )
         createDiv.style.width='18rem';
         createDiv.innerHTML= `
-       
+        <img src="${games.background_image}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${games.name}</h5>
           <p class="card-text">Rating: ${games.rating}/5</p>
@@ -73,7 +80,7 @@ function getInfo () {
     .catch((error)=>{})
 })
 }
-getInfo()
+getRandomGame()
 
 
 //}
@@ -83,3 +90,5 @@ getInfo()
 
 
 //<a href="#" class="btn btn-primary">Go somewhere</a>
+
+*/
