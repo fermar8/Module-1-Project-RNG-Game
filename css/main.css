@@ -177,12 +177,14 @@ nav {
 h1 {
     padding-left: 7px;
     
+    
 }
 
 .title-link{
     text-decoration: none;
     color: var(--text-color);
     font-size: 7vw;
+    
     
 }
 
@@ -344,19 +346,27 @@ input {
 
 /*Dashboard*/
 
+.gameslist-title {
+    margin-top: 7%;
+    margin-left: 15%
+}
 
+.games-list {
+    margin-top: 5%;
+    margin-left: 20%;
+}
 
 .games-list img{
-    width: 100%;
+    width: 60vw;
 }
 
 .games-list h5 {
-    font-size: 1.4rem;
+    font-size: 4.5vw;
 }
 
 .games-list p {
 
-    font-size: 1.2rem
+    font-size: 3.5vw;
 }
 }
 

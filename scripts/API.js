@@ -1,5 +1,7 @@
 "use strict"
 
+//loadDash() {
+
 fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
     "method": "GET",
     "headers": {
@@ -25,8 +27,7 @@ fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
     <img src="${games.background_image}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${games.name}</h5>
-      <p class="card-text">${games.rating}/5</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <p class="card-text">Rating: ${games.rating}/5</p>
     </div>
   `
   console.log(data)
@@ -35,3 +36,12 @@ fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
 
 })
 
+
+//}
+
+//loadDash()
+
+//document.getElementById("random-btn").addEventListener("click", loadDash());
+
+
+//<a href="#" class="btn btn-primary">Go somewhere</a>
