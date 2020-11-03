@@ -368,6 +368,26 @@ input {
 
     font-size: 3.5vw;
 }
+
+/*FAQ*/
+
+.FAQ-title {
+    
+    margin-top: 7%; 
+    width: 100%;
+    margin-bottom: 5%;
+    
+}
+
+.FAQ-h2 {
+    
+    display: inline-block;
+    margin-left: 13%;
+    width: 100%;
+    font-size: 5.5vw;
+}
+
+
 }
 
 
