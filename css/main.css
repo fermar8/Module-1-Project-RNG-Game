@@ -129,10 +129,11 @@ table {
 
 :root {
 
---grey-color: #808080;
+--grey-color: #DDDDDD;
 --text-color: #232529;
---orange-color: #fad790;
+--blue-color: #4db2e0;
 --white-color: #F8F8FF;
+--background-color: #232325d7;
 
     
 }
@@ -145,7 +146,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     line-height: normal;
-    background-color: var(--white-color);
+    background-color: var(--background-color);
+    
     
 }
 
@@ -157,7 +159,7 @@ nav {
     background-color: var(--grey-color);
     color: var(--text-color);
     width: 100%;
-    height: 80px;
+    height: 19vw;
     display: flex;
     justify-content: space-between;
     align-items: center
@@ -184,6 +186,11 @@ h1 {
     
 }
 
+.title-link:hover {
+    text-decoration: none;
+    color: var(--blue-color)
+}
+
 .nav-menu {
     display:flex;
     padding-right: 7px;
@@ -201,6 +208,16 @@ li a {
     color: var(--text-color);
 }
 
+li a:focus {
+    text-decoration:none;
+    color: var(--blue-color)
+}
+
+li a:hover {
+    text-decoration:none;
+    color: var(--blue-color)
+}
+
 
 .header-title{
     width: 100%;
@@ -214,6 +231,7 @@ h2 {
     width: 50%;
     margin: 0 auto;
     font-size: 5.5vw;
+    color: var(--white-color)
 }
 
 .header-subtitle {
@@ -236,6 +254,12 @@ h2 {
     padding: 10vw;
     border-radius: 2vw;
 
+}
+
+p {
+    padding-bottom: 3vw;
+    font-size: 3vw;
+    width: 100%
 }
 
 
