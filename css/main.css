@@ -277,6 +277,69 @@ p {
 }
 
 
+/*Signup & Login*/
+
+
+
+
+
+.signup-title {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 7%;
+    padding-bottom: 7vw;
+}
+
+
+
+.wrapper {
+
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.signup-form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+input {
+    width: 100%;
+    margin-bottom: 3vw;
+    height: 5vw;
+    font-size: 2.5vw;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    
+}
+
+
+.submit-div {
+    margin-left: 0;
+}
+
+.submit-btn {
+    background-color: var(--grey-color);
+    padding: 2vw;
+    border-radius: 1vw;
+    width: 34vw;
+    font-size: 3vw;
+    font-weight: bold;
+    
+
+}
+
+
+
 
 
 /*Dashboard*/
