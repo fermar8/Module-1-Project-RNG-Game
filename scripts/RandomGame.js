@@ -1,6 +1,6 @@
 "use strict"
 
-function getRandomList () {
+function getRandomGame () {
 
     const newLocal = Math.round(Math.floor((Math.random() * 10)));
     let randomGamePage = newLocal;
@@ -27,22 +27,35 @@ function getRandomList () {
         const gameList = document.querySelector('.games-list');
         const allData = data.results;
         console.log(allData);
-        allData.forEach(games => {
+        const randomIndex = Math.round(Math.floor((Math.random() * 10)));
+        const name = allData[randomIndex].name;
+        const image = allData[randomIndex].background_image;
+        const rating = allData[randomIndex].rating;
         const createDiv = document.createElement('div')
+
         createDiv.setAttribute('class','card' )
         createDiv.style.width='18rem';
         createDiv.innerHTML= `
-        <img src="${games.background_image}" class="card-img-top" alt="...">
+        <img src="${image}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">${games.name}</h5>
-          <p class="card-text">Rating: ${games.rating}/5</p>
+          <h5 class="card-title">${name}</h5>
+          <p class="card-text">Rating: ${rating}/5</p>
         </div>
       `
       console.log(data.results)
       gameList.appendChild(createDiv);
     })
     .catch((error)=>{})
-})
 }
 
-getRandomList()
+
+        
+        
+        ///*allData.forEach(games => {
+        //const createDiv = document.createElement('div')
+        ////
+
+getRandomGame()
+
+
+//document.getElementById("demo").innerHTML = ages.find(checkAdult);
