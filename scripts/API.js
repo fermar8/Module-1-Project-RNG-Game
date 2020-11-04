@@ -3,6 +3,10 @@
 //loadDash() {
 
 
+    
+
+
+
 function getGames () {
 
     fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
@@ -34,25 +38,48 @@ function getGames () {
       console.log(data.results)
       gameList.appendChild(createDiv);
     })
-    .catch((error)=>{})
+    
 })
 }
 getGames()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*function getRandomGame () {
 
     const newLocal = Math.round(Math.floor((Math.random() * 10)));
     let randomGamePage = newLocal;
+    randomGamePage = randomGamePage.toString()
+
+    
 
     console.log(randomGamePage)
 
 
-    fetch(`"https://rawg-video-games-database.p.rapidapi.com/games?page=${randomGamePage}"`, {
+    fetch(`"https://rawg-video-games-database.p.rapidapi.com/games?page=${randomGamePage}"), {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
-            "x-rapidapi-key": "b8f3d8b159msh27d0065bced469cp15f8fejsn4e0630fb1464"
+            "x-rapidapi-key": "b8f3d8b159msh27d0065bced469cp15f8fejsn4e0630fb1464"`
         }
     })
     .then(response => {
