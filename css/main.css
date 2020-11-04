@@ -176,17 +176,13 @@ body {
     }
     
     h1 {
-        padding-left: 7px;
-        
-        
+        padding-left: 7px; 
     }
     
     .title-link{
         text-decoration: none;
         color: var(--text-color);
         font-size: 7vw;
-        
-        
     }
     
     .title-link:hover {
@@ -200,8 +196,7 @@ body {
     }
     
     li {
-        padding-left: 10px;
-        
+        padding-left: 10px; 
     }
     
     
@@ -227,15 +222,11 @@ body {
         margin-top: 5%;
         padding-bottom: 3vw;
         border-bottom: 1vw solid var(--grey-color)
-        
     }
     
     .index-header{
-    
         display: inline-block;
         width: 100%;
-        
-    
     }
     
     h2 {
@@ -248,7 +239,6 @@ body {
     .header-subtitle {
         width: 50%;
         margin: 0 auto;
-        
     }
     
         
@@ -259,7 +249,6 @@ body {
         padding:10vw 10vw 5vw 10vw;
         color: var(--white-color);
         text-align: center;
-    
     }
 
     
@@ -274,7 +263,6 @@ body {
 .button-div {
     text-align: center;
     padding-bottom: 10vw;
-
 }
 
     .random-game-btn {
@@ -285,9 +273,6 @@ body {
         width: 40%;
         border-radius: 0.5vw;
         font-weight: bold;
-    
-        
-       
     }
     
     
@@ -300,10 +285,6 @@ body {
 
 
 /*Signup & Login*/
-
-
-
-
 
 .signup-title {
     width: 50%;
@@ -324,14 +305,12 @@ body {
 
     display: flex;
     flex-direction: column;
-
 }
 
 .input-fields {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
 }
 
 input {
@@ -341,7 +320,6 @@ input {
     font-size: 2.5vw;
     background-color: var(--white-color);
     color: var(--text-color);
-    
 }
 
 
@@ -356,8 +334,6 @@ input {
     width: 34vw;
     font-size: 3vw;
     font-weight: bold;
-    
-
 }
 
 
@@ -370,67 +346,64 @@ input {
     width: 100%;
     margin-top: 3%;
     margin-bottom: 4%;
-    
-    
 }
 
 .display-text {
 
     width: 100%;
-    font-size: 4.3vw;
-    padding-left: 3.2%;
-    
-    
-    
-    
-}
-
-
-.games-list {
-    margin-top: 5%;
-    margin-left: 20%;
-    
+    font-size: 30px;
+    padding-left: 2%;
 }
 
 .dashboard-btns-group{
     width: 100%;
     display:flex;
     flex-direction: row;
-    align-content: space-around;
-
+    align-content: center
 }
 
 .dashboard-btns {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+
     border-radius: 0.2vw;
     width: 100%;
-    font-size: 3vw;
-    margin-left: 10%
-
-    
-    
+    font-size: 3.5vw;
     
 }
+
+
 
 .dashboard-border {
     height: 5vw;
-    border-bottom: 0.7vw solid var(--grey-color); 
+     
 }
 
 
 
-.games-list img{
+span {
+    display: flex;
     width: 100%;
 }
 
+.games-list {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around
+}
+
+.games-list img {
+    width: 96.7vw;
+}
+
+
 .games-list h5 {
-    font-size: 4.5vw;
+    font-size: 24px;
+    color: var(--white-color)
 }
 
 .games-list p {
-
-    font-size: 3.5vw;
+    font-size: 17px;
+    color: var(--grey-color)
 }
 
 /*FAQ*/
@@ -440,7 +413,6 @@ input {
     margin-top: 7%; 
     width: 100%;
     margin-bottom: 5%;
-    
 }
 
 .FAQ-h2 {
@@ -488,8 +460,7 @@ input {
            text-decoration: none;
            color: var(--text-color);
            font-size: 45px;
-           
-           
+
        }
        
        .title-link:hover {
@@ -530,8 +501,7 @@ input {
            width: 100%;
            margin-top: 15px;
            padding-bottom: 10px;
-           border-bottom: 8px solid var(--grey-color)
-           
+           border-bottom: 8px solid var(--grey-color)           
        }
        
        .index-header{
@@ -539,7 +509,6 @@ input {
            display: inline-block;
            width: 100%;
            
-       
        }
        
        h2 {
@@ -565,35 +534,25 @@ input {
            -o-background-size: cover;
            background-size: cover;
            object-fit: cover !important;
-   
+
        }
-   
-       
-           
-   
-       .text-box-index {
-           
-           
+      
+       .text-box-index {        
            padding-top: 60px;
            color: var(--white-color);
            padding-left: 50px;
            padding-bottom: 30px;
-        
-           
+    
        }
 
        .button-div {
         text-align: center;
         padding-bottom: 10vw;
-    
-    }
-
-       
+    }       
        p {
            padding-bottom: 40px;
            font-size: 25px;
-           width: 100%;
-           
+           width: 100%;      
        }
        
        
@@ -606,8 +565,6 @@ input {
            border-radius: 3px;
            font-weight: bold;
            
-           
-          
        }
        
        
@@ -617,8 +574,7 @@ input {
            right: 0; 
            bottom: 0;
            min-width: 200px;
-          
-       
+
        }
        
        footer p {
@@ -629,88 +585,88 @@ input {
        
        }
    
-   
-   }
 
 
-/*dashboard*/
+
+/*Dashboard*/
 
 .gameslist-title {
-    margin-top: 7%;
-    padding-bottom: 15px;
-    text-align: center;
     width: 100%;
-    
-    
-    
+    margin-top: 3%;
+    margin-bottom: 4%;
+    text-align: center;
 }
 
 .display-text {
 
     width: 100%;
-    font-size: 30px;
-    padding-left: 3.2%;
-    
-    
-    
-    
-}
-
-
-.games-list {
-
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    
-    
-    
+    font-size: 40px;
+    padding-left: 2%;
 }
 
 .dashboard-btns-group{
     width: 100%;
     display:flex;
     flex-direction: row;
-    align-content: space-around;
-    padding-left: 40px;
+    align-content: center;
+    padding-left: 2%;
+    
 
 }
 
 .dashboard-btns {
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    
     border-radius: 0.2vw;
     width: 100%;
-    font-size: 3vw;
-    margin-left: 10%
+    font-size: 27px;
+    padding: 16px;
+ 
 
-    
-    
-    
 }
+
+
 
 .dashboard-border {
     height: 5vw;
-    border-bottom: 0.7vw solid var(--grey-color); 
+     
 }
 
 
 
-.games-list img{
-    width: 100%;
+span {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+
+}
+
+.games-list {
+    padding-top: 10px;
+    width: 100vw;
+
+}
+
+.games-list img {
+
+    width: 100vw;
 }
 
 .games-list h5 {
-    font-size: 4.5vw;
+    font-size: 36px;
+    color: var(--white-color);
+    width: 90vw;
 }
 
 .games-list p {
 
-    font-size: 3.5vw;
+    font-size: 28px;
+    color: var(--grey-color);
+    width: 80vw;
 }
 
+}
 
-   @media only screen and (min-width: 1025px) {
+ @media only screen and (min-width: 1025px) {
 
 
     nav {
@@ -824,26 +780,18 @@ input {
 
     }
 
-    
-        
-
     .text-box-index {
-        
         
         padding-top: 80px;
         color: var(--white-color);
         padding-left: 150px;
         padding-bottom: 40px;
-     
-        
     }
 
-    
 
     .button-div {
      text-align: center;
-     padding-bottom: 10vw;
- 
+     padding-bottom: 10vw; 
  }
 
     
@@ -851,7 +799,6 @@ input {
         padding-bottom: 40px;
         font-size: 25px;
         width: 100%;
-        
     }
     
     
@@ -863,9 +810,6 @@ input {
         font-size: 25px;
         border-radius: 3px;
         font-weight: bold;
-        
-        
-       
     }
     
     
@@ -875,8 +819,6 @@ input {
         right: 0; 
         bottom: 0;
         min-width: 200px;
-       
-    
     }
     
     footer p {
@@ -884,12 +826,90 @@ input {
         color: var(--white-color);
         font-size: 9px;
         text-align: center; 
-    
     }
 
 
 
+/*Dashboard*/
 
+.gameslist-title {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.display-text {
+
+    width: 100%;
+    font-size: 30px;
+    padding-left: 2%;
+}
+
+.dashboard-btns-group{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dashboard-btns {
+
+    border-radius: 0.2vw;
+    width: 100%;
+    font-size: 18px;
+    
+    
+}
+
+
+
+.dashboard-border {
+    height: 50px;
+     
+}
+
+
+
+span {
+    display: flex;
+    max-width: 100%;
+}
+
+.games-list {
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 20%;
+    
+}
+
+.games-list div {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.games-list img {
+    width: 65vw;
+}
+
+
+.games-list h5 {
+    font-size: 35px;
+    color: var(--white-color);
+    text-align: left;
+    
+}
+
+.games-list p {
+    font-size: 17px;
+    color: var(--grey-color);
+    text-align: left;
+}
 
 
 
