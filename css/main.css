@@ -633,6 +633,83 @@ input {
    }
 
 
+/*dashboard*/
+
+.gameslist-title {
+    margin-top: 7%;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    
+    
+    
+}
+
+.display-text {
+
+    width: 100%;
+    font-size: 30px;
+    padding-left: 3.2%;
+    
+    
+    
+    
+}
+
+
+.games-list {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    
+    
+}
+
+.dashboard-btns-group{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-content: space-around;
+    padding-left: 40px;
+
+}
+
+.dashboard-btns {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border-radius: 0.2vw;
+    width: 100%;
+    font-size: 3vw;
+    margin-left: 10%
+
+    
+    
+    
+}
+
+.dashboard-border {
+    height: 5vw;
+    border-bottom: 0.7vw solid var(--grey-color); 
+}
+
+
+
+.games-list img{
+    width: 100%;
+}
+
+.games-list h5 {
+    font-size: 4.5vw;
+}
+
+.games-list p {
+
+    font-size: 3.5vw;
+}
+
+
    @media only screen and (min-width: 1025px) {
 
 
@@ -753,9 +830,9 @@ input {
     .text-box-index {
         
         
-        padding-top: 60px;
+        padding-top: 80px;
         color: var(--white-color);
-        padding-left: 200px;
+        padding-left: 150px;
         padding-bottom: 40px;
      
         
