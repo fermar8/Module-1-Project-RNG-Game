@@ -440,6 +440,12 @@ span {
     width: 100%;
 }
 
+.card-body {
+    background-color: var(--white-color);
+    width: 100vw;
+}
+
+
 .games-list {
     padding-top: 10px;
     display: flex;
@@ -458,8 +464,9 @@ span {
 }
 
 .games-list p {
-    font-size: 17px;
-    color: var(--text-color)
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 10px;
 }
 
 /*FAQ*/
@@ -809,6 +816,11 @@ span {
 
 }
 
+.card-body {
+    background-color: var(--white-color);
+    width: 100vw;
+}
+
 .games-list {
     padding-top: 10px;
     width: 100vw;
@@ -821,16 +833,18 @@ span {
 }
 
 .games-list h5 {
-    font-size: 36px;
+    font-size: 30px;
     color: var(--text-color);
     width: 90vw;
+    line-height: 50px;
 }
 
 .games-list p {
 
-    font-size: 28px;
-    color: var(--grey-color);
+    font-size: 23px;
+    color: var(--text-color);
     width: 80vw;
+    line-height: 5px;
 }
 
 
@@ -1208,16 +1222,17 @@ span {
 
 .games-list h5 {
     background-color: var(--white-color);
-    font-size: 35px;
+    font-size: 32px;
     color: var(--text-color);
     text-align: left;
     
 }
 
 .games-list p {
-    font-size: 17px;
+    font-size: 23px;
     color: var(--text-color);
     text-align: left;
+    line-height: 15px;
 }
 
 

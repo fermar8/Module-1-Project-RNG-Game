@@ -2,7 +2,7 @@
 
 function getRandomList () {
 
-    const newLocal = Math.round(Math.floor((Math.random() * 10)));
+    const newLocal = Math.round(Math.floor((Math.random() * 50)));
     let randomGamePage = newLocal;
     randomGamePage = randomGamePage.toString()
 
@@ -35,7 +35,7 @@ function getRandomList () {
         <img src="${games.background_image}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${games.name}</h5>
-          <p class="card-text">Rating: ${games.rating}/5</p>
+          <p class="card-text">Rating: ${games.rating}/5  &#11088</p>
         </div>
       `
       console.log(data.results)

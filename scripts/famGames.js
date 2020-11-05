@@ -25,12 +25,12 @@ function getGames () {
         allData.forEach(games => {
         const createDiv = document.createElement('div')
         createDiv.setAttribute('class','card' )
-        createDiv.style.width='90vw';
+        createDiv.style.width='100vw';
         createDiv.innerHTML= `
         <img src="${games.background_image}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${games.name}</h5>
-          <p class="card-text">Rating: ${games.rating}/5</p>
+          <p class="card-text">Rating: ${games.rating}/5  &#11088;</p>
         </div>
       `
       console.log(data.results)
