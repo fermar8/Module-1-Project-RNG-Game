@@ -341,7 +341,21 @@ input {
 }
 
 
+.message-container {
 
+    padding-top: 30px;
+
+
+}
+
+.message-container p {
+
+    font-size: 1rem;
+    padding-bottom: 5px;
+    color: rgb(253, 219, 23);
+
+
+}
 
 
 /*Dashboard*/
@@ -661,6 +675,22 @@ input {
     width: 10rem;
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+.message-container {
+
+    padding-top: 30px;
+
+
+}
+
+.message-container p {
+
+    font-size: 1rem;
+    padding-bottom: 5px;
+    color: rgb(253, 219, 23);
+
+
 }
 
 
@@ -996,6 +1026,21 @@ input {
     font-weight: bold;
 }
 
+.message-container {
+
+    padding-top: 30px;
+
+
+}
+
+.message-container p {
+
+    font-size: 1.2rem;
+    padding-bottom: 6px;
+    color: rgb(253, 219, 23);
+
+
+}
 
 
 
