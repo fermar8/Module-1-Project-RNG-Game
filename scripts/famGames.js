@@ -7,7 +7,7 @@
 
 function getGames () {
 
-    fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=2", {
+    fetch("https://rawg-video-games-database.p.rapidapi.com/games?page=1", {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
